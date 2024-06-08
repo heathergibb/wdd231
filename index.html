@@ -3,14 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home Page</title>
+    <meta name="author" content="Heather Gibb">
+    <meta name="description" content="">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/dates.js" defer></script>
 </head>
 <body>
-    <p>Testing</p>
+    <header>
+        <img src="images/heather-gibb.jpg" alt="Head shot of Heather Gibb">
+        <h1 class="title">Heather Gibb</h1>
+    </header>
+    <nav class="menu-links">
+        <a href="#">Home</a>
+        <a href="#">Chamber</a>
+        <a href="#">GitHub Profile</a>
+        <a href="#">LinkedIn</a>
+    </nav>
     <main>
-
-      </main>
+        <section id="course-card">
+            <h2 class="card-heading">Course Work</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section id="place-card">
+            <h2 class="card-heading">Magrath, Alberta</h2>
+            <figure>
+                <img src="images/magrath.jpg" alt="Welcome to Magrath sign">
+                <figcaption>Welcome to Magrath</figcaption>
+            </figure>
+        </section>
+        <section>
+            <h2 class="card-heading">Web and Computer Programming Certificate</h2>
+            <button>All</button>
+            <!-- <input type="submit" id="all-courses" class="button" value="All"> -->
+            <button>CSE</button>
+            <button>WDD</button>
+            <button>WDD</button>
+            <hr>
+            <button>CSE 110</button>
+            <button>WDD130</button>
+            <button>CSE 111</button>
+            <button>CSE 210</button>
+            <button>WDD 131</button>
+            <button>WDD 231</button>
+            
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> | Heather Gibb | Magrath, AB, Canada</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
 
