@@ -3,54 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Heather Gibb | WDD 231</title>
     <meta name="author" content="Heather Gibb">
-    <meta name="description" content="">
+    <meta name="description" content="Home page for WDD 231 course work by Heather Gibb.">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/dates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <script src="scripts/header-footer.js" defer></script>
+    <script src="scripts/home-page.js" defer></script>
 </head>
 <body>
     <header>
-        <img src="images/heather-gibb.jpg" alt="Head shot of Heather Gibb">
-        <h1 class="title">Heather Gibb</h1>
+        <img src="images/heather-gibb.webp" alt="Head shot of Heather Gibb" width="154">
+        <h1>Heather Gibb</h1>
+        <div id="menu"></div>
     </header>
-    <nav class="menu-links">
-        <a href="#">Home</a>
-        <a href="#">Chamber</a>
-        <a href="#">GitHub Profile</a>
-        <a href="#">LinkedIn</a>
+    <nav>
+        <ul class="menu-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/heather-gibb/" target="_blank">LinkedIn</a></li>
+        </ul>          
     </nav>
     <main>
-        <section id="course-card">
+        <section id="course-card" class="card">
             <h2 class="card-heading">Course Work</h2>
-            <ul>
+            <ul class="card-content">
                 <li></li>
                 <li></li>
                 <li></li>
             </ul>
         </section>
-        <section id="place-card">
+        <section id="place-card" class="card">
             <h2 class="card-heading">Magrath, Alberta</h2>
-            <figure>
-                <img src="images/magrath.jpg" alt="Welcome to Magrath sign">
+            <figure class="card-content">
+                <img src="images/magrath.webp" alt="Welcome to Magrath sign" width="200">
                 <figcaption>Welcome to Magrath</figcaption>
             </figure>
         </section>
-        <section>
+        <section id="certificate-card" class="card">
             <h2 class="card-heading">Web and Computer Programming Certificate</h2>
-            <button>All</button>
-            <!-- <input type="submit" id="all-courses" class="button" value="All"> -->
-            <button>CSE</button>
-            <button>WDD</button>
-            <button>WDD</button>
-            <hr>
-            <button>CSE 110</button>
-            <button>WDD130</button>
-            <button>CSE 111</button>
-            <button>CSE 210</button>
-            <button>WDD 131</button>
-            <button>WDD 231</button>
-            
+            <div class="card-content">
+                <button class="not-selected" id="all">All</button>
+                <button class="not-selected" id="cse">CSE</button>
+                <button class="not-selected" id="wdd">WDD</button>
+                <hr>
+                <div id="course-cards">
+
+                </div>            
+            </div>
         </section>
     </main>
     <footer>
