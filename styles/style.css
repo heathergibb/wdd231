@@ -55,16 +55,16 @@ header img {
     margin: 0;
 }
 
-/* .menu-links .active {
-    font-weight: bold;
-} */
-.menu-links .active::before {
+.menu-links .active {
+    text-decoration: underline;
+}
+/* .menu-links .active::before {
     content: "★ ";
-}
+} */
 
-.menu-links .active::after {
+/* .menu-links .active::after {
     content: " ★";
-}
+} */
 
 .menu-links.show {
     display: block;
@@ -113,7 +113,7 @@ main {
 #place-card figure img {
     width: 100%;
     height: auto;
-    max-width: 200px;
+    max-width: 480px;
     box-shadow: 2px 5px 10px var(--primary-color);
     margin-bottom: 10px;
 }
@@ -210,6 +210,10 @@ footer p {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;
+    }
+
+    .card-content {
+        margin: 30px;
     }
 
     #course-card {
