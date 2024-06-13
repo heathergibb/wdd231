@@ -129,3 +129,23 @@ function displayCourses(courseList) {
         cardContainer.appendChild(courseCard);
     })
 }
+
+const requiredCredits = document.querySelector("#total-credits");
+requiredCredits.innerHTML = `Required: ${getTotalCredits()}`;
+
+const completedCredits = document.querySelector("#total-completed");
+completedCredits.innerHTML = `Completed: ${getCompletedCredits()}`;
+
+function getTotalCredits() {
+    return courses.reduce((total, creditValue) => {
+        return total += creditValue.credits;
+    }, 0)
+}
+
+function getCompletedCredits() {
+    const completedCourses = courses.filter(course => course.completed);
+
+    return completedCourses.reduce((total, creditValue) => {
+        return total += creditValue.credits;
+    }, 0)
+}
