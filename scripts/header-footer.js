@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function() {
         if (item.href === currentPage) {
             item.classList = "active";
         }
-
     })
 })
 
