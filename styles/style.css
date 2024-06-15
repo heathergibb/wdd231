@@ -1,9 +1,15 @@
 :root {
-    --primary-color: rgb(20, 43, 72);
+    /* --primary-color: rgb(21, 46, 77);
     --secondary-color: rgb(6, 25, 48);
     --background-color: rgb(213, 226, 236);
     --text-color: rgb(218, 225, 253);
-    --text-color-dark: rgb(6, 25, 48);
+    --text-color-dark: rgb(6, 25, 48); */
+
+    --primary-color: rgb(23, 85, 47);
+    --secondary-color: rgb(62, 156, 85);
+    --background-color: rgb(237, 243, 232);
+    --text-color: rgb(237, 243, 232);
+    --text-color-dark: rgb(12, 70, 34);
     --font-family-sans: Montserrat, Arial, sans-serif;
     --font-family-serif: Lora, "Times New Roman", serif;
 }
