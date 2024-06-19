@@ -1,0 +1,28 @@
+{
+    "family-name": "Gibb",
+    "move-in-date": "2024-06-20",
+    "family-size": 4,
+    "visited": false,
+    "family-members": [
+        {
+            "name": "Heather",
+            "gender": "F",
+            "birthdate": "1978-07-06"
+        },
+        {
+            "name": "Curtis",
+            "gender": "M",
+            "birthdate": "1976-06-08"
+        },
+        {
+            "name": "Heather",
+            "gender": "F",
+            "birthdate": "1978-07-06"
+        },
+        {
+            "name": "Heather",
+            "gender": "F",
+            "birthdate": "1978-07-06"
+        }
+    ]
+}
