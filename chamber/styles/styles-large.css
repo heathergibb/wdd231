@@ -72,7 +72,7 @@
 
     #directory-cards.list {
         grid-template-columns: 1fr;
-        grid-column: 1/3';
+        grid-column: 1/3;
     }
 
     #directory-cards.grid {
