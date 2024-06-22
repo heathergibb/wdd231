@@ -98,7 +98,7 @@ header {
 /* MAIN SECTION */
 
 main {
-    margin: 20px;
+    margin: 0px 20px 20px 20px;
     display: flex;
     flex-direction: column;
 }
@@ -173,7 +173,7 @@ footer {
     background-color: var(--primary-color);
     color: var(--text-color);
     display: block;
-    font-size: 1rem;
+    font-size: .9rem;
 }
 
 footer p {
