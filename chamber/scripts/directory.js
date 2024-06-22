@@ -54,6 +54,10 @@ const displayMemberCards = (members) => {
         let phone = document.createElement("p");
         phone.innerHTML = `<span class="card-label">Phone:</span> ${member.phone}`;
         info.appendChild(phone);
+        
+        let memberSince = document.createElement("p");
+        memberSince.innerHTML = `<span class="card-label">Member Since:</span> ${member.memberSince}`;
+        info.appendChild(memberSince);
 
         let email = document.createElement("p");
         email.innerHTML = `<span class="card-label">Email:</span> ${member.email}`;
@@ -65,10 +69,6 @@ const displayMemberCards = (members) => {
         url.classList.add("url");
         url.target = "_blank";
         info.appendChild(url);
-
-        let memberSince = document.createElement("p");
-        memberSince.innerHTML = `<span class="card-label">Member Since:</span> ${member.memberSince}`;
-        info.appendChild(memberSince);
 
         card.appendChild(info);
 

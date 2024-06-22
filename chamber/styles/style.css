@@ -153,8 +153,9 @@ main {
 
 .member-img {
     float: left;
-    width: 100px;
-    height: 100px;
+    width: 15vw;
+    height: auto;
+    max-width: 100px;
     margin-right: 20px;
     margin-bottom: 10px;
 }
