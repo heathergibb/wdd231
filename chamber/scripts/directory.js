@@ -36,7 +36,7 @@ const displayMemberCards = (members) => {
         else {
             address.innerHTML = `<span class="card-label">Address:</span>${member.address}`;
         }
-        phone.innerHTML = `<span class="card-label>Phone:</span>${member.phone}`;
+        phone.innerHTML = `<span class="card-label">Phone:</span>${member.phone}`;
         email.innerHTML = `<span class="card-label">Email:</span>${member.email}`;
         
         url.textContent = `${member.url}`;
