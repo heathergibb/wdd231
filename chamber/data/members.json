@@ -1,0 +1,82 @@
+{
+    "members": 
+    [
+        {
+            "name": "ATB Financial - Magrath Branch #843",
+            "address": "82 West 1st Ave South",
+            "box": "549",
+            "phone": "403-758-3345",
+            "email": "troy.speelman@atb.com",
+            "url": "http://www.atb.com/contact-us/Pages/branch-locator.aspx",
+            "image": "../chamber/images/atb-card.webp",
+            "memberLevel": 3,
+            "memberSince": 2017
+        },
+        {
+            "name": "Keyline Printing & Design",
+            "address": "123 Main Street",
+            "box": "",
+            "phone": "403-759-1000",
+            "email": "duane@keyline.ca",
+            "url": "https://keyline.ca",
+            "image": "../chamber/images/keyline-card.webp",
+            "memberLevel": 2,
+            "memberSince": 2014
+        },
+        {
+            "name": "Canadian Security Systems Ltd",
+            "address": "126 Harker Ave East",
+            "box": "574",
+            "phone": "403-758-3845",
+            "email": "css@canadiansecuritysystems.ca",
+            "url": "https://www.canadiansecuritysystems.ca",
+            "image": "../chamber/images/security-card.webp",
+            "memberLevel": 2,
+            "memberSince": 2014
+        },
+        {
+            "name": "Custom Windows and Doors",
+            "address": "326 North 1st Street West",
+            "box": "40",
+            "phone": "403-758-3233",
+            "email": "customwindowsmagrath@gmail.com",
+            "url": "https://homehardware.ca",
+            "image": "../chamber/images/custom-windows-card.webp",
+            "memberLevel": 1,
+            "memberSince": 2019
+        },
+        {
+            "name": "Surex Insurance Brokers",
+            "address": "5 North 1st Street West",
+            "box": "205",
+            "phone": "403-388-2388",
+            "email": "support@surexdirect.com",
+            "url": "https://surexdirect.com",
+            "image": "../chamber/images/surex-card.webp",
+            "memberLevel": 1,
+            "memberSince": 2019
+        },
+        {
+            "name": "Inline Ovals",
+            "address": "407 East !st Ave North",
+            "box": "185",
+            "phone": "403-758-6278",
+            "email": "sales@inlineovals.com",
+            "url": "https://inlineovals.com",
+            "image": "../chamber/images/inline-ovals.webp",
+            "memberLevel": 3,
+            "memberSince": 2010
+        },
+        {
+            "name": "Magrath Coop",
+            "address": "60 East Street West",
+            "box": "",
+            "phone": "403-758-3155",
+            "email": "sales@magrathcoop.com",
+            "url": "https://magrathcoop.com",
+            "image": "../chamber/images/coop-card.webp",
+            "memberLevel": 2,
+            "memberSince": 2010
+        }
+    ]
+}

@@ -2,6 +2,7 @@
     --primary-color: rgb(23, 85, 47);
     --secondary-color: rgb(20, 56, 31);
     --background-color: rgb(237, 243, 232);
+    --card-color: rgba(182, 231, 182, 0.493);
     --text-color: rgb(237, 243, 232);
     --text-color-dark: rgb(12, 70, 34);
     --font-family-sans: Montserrat, Arial, sans-serif;
@@ -43,7 +44,7 @@ header {
 
 #header-titles h1 {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
 }
 
 #menu {
@@ -95,11 +96,87 @@ header {
     background-color: var(--primary-color);  
 }
 
+/* MAIN SECTION */
+
+main {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-heading {
+    font-size: 1.75rem;
+    margin-left: 20px;
+}
+
+.dir-layout {
+    display: none;
+    margin-right: 20px;
+}
+
+.dir-layout input {
+    display: none; 
+}
+
+#directory-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.member-card {
+    flex: 1;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: repeat(auto, 7);
+    background-color: var(--card-color);
+    padding: 20px;
+    max-width: 100%;
+}
+
+.member-card .name {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    text-align: center;
+    margin: 0px;
+    font-size: 1rem;
+}
+
+.member-card .level {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    font-size: .9rem;
+    text-align: center;
+    font-style: italic;
+    padding: 5px;
+    border-bottom: 1px solid var(--text-color-dark);
+    margin: 0 0 20px 0;
+}
+
+.member-card img {
+    padding-right: 20px;
+    grid-column: 1/2;
+    grid-row: 3/8;
+}
+
+.address, .phone, .email, .url, .member-since {
+    margin: 0;
+    font-size: .9rem;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.card-label {
+    font-size: .9rem;
+    font-weight: bold;
+    padding-right: 5px;
+}
+
 footer {
     background-color: var(--primary-color);
     color: var(--text-color);
     display: block;
-    font-size: .75rem;
+    font-size: 1rem;
 }
 
 footer p {
@@ -116,54 +193,12 @@ footer p {
 }
 
 #social img {
-    padding: 5px;
-    width: 20vw;
+    padding: 5px 15px;
     max-width: 48px;
 }
 
 #contact-info, #social, #copyright-info {
-    margin: 10px;
+    padding: 20px;
     align-self: center;
     justify-self: left;
-}
-
-@media screen and (min-width: 640px) {
-    header {  
-        grid-template-columns: auto auto 1fr; 
-    }
-
-    #menu {
-        display: none;
-    }
-
-    .menu-links {
-        display: flex;
-        justify-content: right;
-        grid-column: 3/4;
-        background-color: var(--primary-color);
-        margin: 20px;
-    }
-
-    .menu-links a {
-        font-family: var(--font-family-sans);
-        font-size: .9rem;
-        text-align: right;
-        align-self: flex-end;
-        padding: 10px 20px;
-    }
-
-    .menu-links a:hover {
-        border: none;
-        font-size: 1rem;
-    }
-    
-    footer {
-        display: flex;
-        flex-direction: row;
-    }
-/* 
-    footer div {
-        flex: 1 1 auto;
-    } */
-
 }

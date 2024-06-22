@@ -1,0 +1,93 @@
+@media screen and (min-width: 700px) {
+    header {  
+        grid-template-columns: auto auto 1fr; 
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .menu-links {
+        display: flex;
+        justify-content: right;
+        grid-column: 3/4;
+        background-color: var(--primary-color);
+        margin: 20px;
+    }
+
+    .menu-links a {
+        font-family: var(--font-family-sans);
+        font-size: .9rem;
+        text-align: right;
+        align-self: flex-end;
+        padding: 10px 20px;
+    }
+
+    .menu-links a:hover {
+        border: none;
+        font-size: 1rem;
+    }
+    
+    /* MAIN SECTION */
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 20px 0px;
+    }
+
+    .main-heading {
+        grid-column: 1/2;
+        align-self: center;
+    }
+
+    .dir-layout {
+        display: flex;
+        justify-content: right;
+        grid-column: 2/3;
+        align-self: center;
+    }
+
+    .dir-layout label {
+        flex: 1;
+        text-align: center;
+        border: 2px solid var(--secondary-color);
+        padding: 5px 20px;
+        color: var(--text-color-dark);
+        background-color: var(--background-color);
+        max-width: 40px;
+        cursor: pointer;
+    }
+    
+    .dir-layout input[type="radio"]:checked + label {
+        background-color: var(--secondary-color);
+        color: var(--text-color);
+    }
+
+    #directory-cards {
+        display: grid;
+        grid-column: 1/3;
+        margin: 0;
+    }
+
+    #directory-cards.list {
+        grid-template-columns: 1fr;
+        grid-column: 1/3';
+    }
+
+    #directory-cards.grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer div {
+        flex: 1 1 auto;
+    }
+
+}

@@ -13,29 +13,24 @@
     <meta property="og:url" content="https://heathergibb.github.io/wdd231/directory.html">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/styles-large.css">
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="scripts/header-footer.js" defer></script>
-    <!-- <script src="scripts/directory.js" defer></script> -->
+    <script src="scripts/directory.js" defer></script>
 </head>
 <body>
     <header>
         <a id="logo-link" href="index.html">
-            <img class="logo" src="images/logo.webp" alt="logo showing a grain elevator" width="100">
+            <img class="logo" src="images/logo.webp" alt="logo showing a grain elevator" width="100" height="100">
         </a>
         <div id="header-titles">
             <h1>Magrath</h1>
             <p>Chamber of Commerce</p>
         </div>
         <nav class="menu-links">
-            <!-- <ul class="menu-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
-            </ul>      -->
             <a href="index.html">Home</a>
             <a href="directory.html">Directory</a>
             <a href="join.html">Join</a>
@@ -44,7 +39,17 @@
         <div id="menu"></div>
     </header>
     <main>
-    
+        <h1 class="main-heading">Directory</h1>
+        <div class="dir-layout">
+            <input type="radio" name="grid-list" id="grid-view" checked>
+            <label for="grid-view">Grid</label>
+
+            <input type="radio" name="grid-list" id="list-view">
+            <label for="list-view">List</label>
+        </div>
+
+        <div id="directory-cards" class="grid"></div>
+
     </main>
     <footer>
         <div id="contact-info">
@@ -56,13 +61,13 @@
         </div>
         <div id="social">
             <a href="https://youtube.com" target="_blank">
-                <img src="images/youtube.webp" alt="youtube icon" width="48">
+                <img src="images/youtube.webp" alt="youtube icon" width="48" height="48">
             </a>
             <a href="https://twitter.com" target="_blank">
-                <img src="images/x-logo.webp" alt="twitter icon" width="48">
+                <img src="images/x-logo.webp" alt="twitter icon" width="48" height="48">
             </a>
             <a href="https://www.linkedin.com/" target="_blank">
-                <img src="images/linkedin.webp" alt="linkdin icon" width="48">
+                <img src="images/linkedin.webp" alt="linkdin icon" width="48" height="48">
             </a>
         </div>
         <div id="copyright-info">

@@ -8,7 +8,7 @@ navButton.addEventListener("click", () => {
 })
 
 window.addEventListener("resize", function () {
-    if (this.window.innerWidth >= 640) {
+    if (this.window.innerWidth >= 700) {
         navMenu.classList.remove("show");
         navButton.classList.remove("show");
     }
