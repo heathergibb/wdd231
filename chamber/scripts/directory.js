@@ -35,9 +35,6 @@ const displayMemberCards = (members) => {
         level.classList.add("level");
         card.appendChild(level);
 
-        let info = document.createElement("div");
-        info.classList.add("info");
-
         let img = document.createElement("img");
         img.src = member.image;
         img.alt = `Image or logo for ${member.name}`;
@@ -45,32 +42,29 @@ const displayMemberCards = (members) => {
         img.width = "100";
         img.height = "100";
         img.classList.add("member-img");
-        info.appendChild(img);
+        card.appendChild(img);
 
         let address = document.createElement("p");
         address.innerHTML = `<span class="card-label">Address:</span> ${member.address}${member.box ? `, Box ${member.box}` : ''}`;
-        info.appendChild(address);
+        address.classList.add("info");
+        card.appendChild(address);
 
         let phone = document.createElement("p");
         phone.innerHTML = `<span class="card-label">Phone:</span> ${member.phone}`;
-        info.appendChild(phone);
-        
-        let memberSince = document.createElement("p");
-        memberSince.innerHTML = `<span class="card-label">Member Since:</span> ${member.memberSince}`;
-        info.appendChild(memberSince);
+        phone.classList.add("info");
+        card.appendChild(phone);
 
         let email = document.createElement("p");
         email.innerHTML = `<span class="card-label">Email:</span> ${member.email}`;
-        info.appendChild(email);
+        email.classList.add("info");
+        card.appendChild(email);
 
         let url = document.createElement("a");
         url.href = member.url;
         url.textContent = `${member.url}`;
         url.classList.add("url");
         url.target = "_blank";
-        info.appendChild(url);
-
-        card.appendChild(info);
+        card.appendChild(url);
 
         cards.appendChild(card);
     });

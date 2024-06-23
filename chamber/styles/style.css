@@ -129,44 +129,47 @@ main {
     background-color: var(--card-color);
     padding: 20px;
     max-width: 100%;
+    word-break: break-all; 
+    word-wrap: break-word;
+    font-size: 0.9rem;
 }
 
 .member-card h2 {
     text-align: center;
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .member-card .level {
     text-align: center;
     font-style: italic;
-    margin-top: 10px;
+    margin: 10px 0 20px 0;
     padding-bottom: 5px;
     font-size: .9rem;
     border-bottom: 1px solid var(--text-color-dark);
 }
 
-.member-card .info {
-    word-wrap: break-word;
-    font-size: 1rem;
-}
-
 .member-img {
     float: left;
-    width: 15vw;
+    width: 7.5vw;
     height: auto;
     max-width: 100px;
     margin-right: 20px;
     margin-bottom: 10px;
 }
 
-.member-card .info p {
+.member-card .info {
     margin: 5px;
+}
+
+.member-card a {
+    margin: 0;
 }
 
 .member-card .card-label {
     font-weight: bold;
     margin-right: 5px;
+    font-size: .9rem;
 }
 
 footer {

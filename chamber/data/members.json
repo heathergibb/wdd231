@@ -9,8 +9,7 @@
             "email": "troy.speelman@atb.com",
             "url": "http://www.atb.com/contact-us/Pages/branch-locator.aspx",
             "image": "../chamber/images/atb-card.webp",
-            "memberLevel": 3,
-            "memberSince": 2017
+            "memberLevel": 3
         },
         {
             "name": "Keyline Printing & Design",
@@ -20,8 +19,7 @@
             "email": "duane@keyline.ca",
             "url": "https://keyline.ca",
             "image": "../chamber/images/keyline-card.webp",
-            "memberLevel": 2,
-            "memberSince": 2014
+            "memberLevel": 2
         },
         {
             "name": "Canadian Security Systems Ltd",
@@ -31,8 +29,7 @@
             "email": "css@canadiansecuritysystems.ca",
             "url": "https://www.canadiansecuritysystems.ca",
             "image": "../chamber/images/security-card.webp",
-            "memberLevel": 2,
-            "memberSince": 2014
+            "memberLevel": 2
         },
         {
             "name": "Custom Windows and Doors",
@@ -42,8 +39,7 @@
             "email": "customwindowsmagrath@gmail.com",
             "url": "https://homehardware.ca",
             "image": "../chamber/images/custom-windows-card.webp",
-            "memberLevel": 1,
-            "memberSince": 2019
+            "memberLevel": 1
         },
         {
             "name": "Surex Insurance Brokers",
@@ -53,8 +49,7 @@
             "email": "support@surexdirect.com",
             "url": "https://surexdirect.com",
             "image": "../chamber/images/surex-card.webp",
-            "memberLevel": 1,
-            "memberSince": 2019
+            "memberLevel": 1
         },
         {
             "name": "Inline Ovals",
@@ -64,8 +59,7 @@
             "email": "sales@inlineovals.com",
             "url": "https://inlineovals.com",
             "image": "../chamber/images/inline-ovals.webp",
-            "memberLevel": 3,
-            "memberSince": 2010
+            "memberLevel": 3
         },
         {
             "name": "Magrath Coop",
@@ -75,8 +69,7 @@
             "email": "sales@magrathcoop.com",
             "url": "https://magrathcoop.com",
             "image": "../chamber/images/coop-card.webp",
-            "memberLevel": 2,
-            "memberSince": 2010
+            "memberLevel": 2
         }
     ]
 }
