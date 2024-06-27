@@ -71,16 +71,16 @@ const displayMemberCards = (members) => {
 };
 
 document.addEventListener("DOMContentLoaded", function() {
-    const gridView = document.getElementById('grid-view');
-    const listView = document.getElementById('list-view');
+    const gridView = document.getElementById('dir-grid-view');
+    const listView = document.getElementById('dir-list-view');
     const directoryCards = document.querySelector("#directory-cards");
 
     document.querySelector('.dir-layout').addEventListener('click', function() {
         if (gridView.checked) {
-            directoryCards.classList = "grid";
+            directoryCards.classList = "dir-grid";
         }
         if (listView.checked) {
-            directoryCards.classList = "list";
+            directoryCards.classList = "dir-list";
         }
     });
 });

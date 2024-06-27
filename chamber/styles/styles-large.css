@@ -69,24 +69,24 @@
         margin: 0;
     }
 
-    #directory-cards.list .member-card {
+    #directory-cards.dir-list .member-card {
         display: grid;
         grid-template-columns: 1fr .5fr 1fr .5fr 1fr 1fr;
         margin: 0;
         padding: 0.25rem;
     }
 
-     #directory-cards.list .member-card img {
+     #directory-cards.dir-list .member-card img {
         display: none;
     }
 
-    #directory-cards.list .member-card .card-label {
+    #directory-cards.dir-list .member-card .card-label {
         display: none;
     }
 
-    #directory-cards.list .member-card h2,
-    #directory-cards.list .member-card .level,
-    #directory-cards.list .member-card .info {
+    #directory-cards.dir-list .member-card h2,
+    #directory-cards.dir-list .member-card .level,
+    #directory-cards.dir-list .member-card .info {
         margin: 0;
         padding: 0;
         border: 0;
@@ -95,7 +95,7 @@
         text-align: left;
     }    
 
-    #directory-cards.grid {
+    #directory-cards.dir-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
