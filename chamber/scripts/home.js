@@ -25,6 +25,7 @@ async function displayCurrentWeather() {
     const currentData = await apiFetch(urlCurrent);
 
     const icon = document.querySelector("#weather-icon");
+    const iconImg = document.createElement("img");
     const temp = document.querySelector("#temp");
     const desc = document.querySelector("#temp-desc");
     const high = document.querySelector("#high");
@@ -35,8 +36,11 @@ async function displayCurrentWeather() {
     
     const weatherIcon = `https://openweathermap.org/img/w/${currentData.weather[0].icon}.png`;
 
-    icon.setAttribute("src", weatherIcon);
-    icon.setAttribute("alt", currentData.weather[0].description);
+    iconImg.setAttribute("src", weatherIcon);
+    iconImg.setAttribute("alt", currentData.weather[0].description);
+    iconImg.setAttribute("width",70);
+    iconImg.setAttribute("height",70);
+    icon.appendChild(iconImg);
     temp.innerHTML = `${currentData.main.temp.toFixed(0)}&deg;C</span>`;
     desc.innerHTML = currentData.weather[0].description;
     high.innerHTML = `${currentData.main.temp_max.toFixed(0)}&deg;C`;

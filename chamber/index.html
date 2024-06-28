@@ -41,15 +41,14 @@
         <div id="menu"></div>
     </header>
     <main>
-        
-            <section class="hero">
-                <picture>
-                    <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
-                    <source media="(min-width: 700px)" srcset="images/hero-med.webp">
-                    <img src="images/grain.webp" alt="hero image" width="700" height="280">
-                </picture>
-                <button>Become a Chamber Member Today!</button>
-            </section>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
+                <source media="(min-width: 700px)" srcset="images/hero-med.webp">
+                <img src="images/grain.webp" alt="hero image" width="700" height="280">
+            </picture>
+            <button>Become a Chamber Member Today!</button>
+        </div>
         <div id="home-container">
             <h1 class="main-heading">Home</h1>
             
@@ -61,7 +60,7 @@
                 <div id="current-weather" class="home-card">
                     <h2>Current Weather</h2>
                     <div id="current-weather-container">
-                        <img id="weather-icon" src="" width="70" height="70">
+                        <div id="weather-icon"></div>
                         <div id="current-weather-details">
                             <p id="temp" class="temps"></p>
                             <p id="temp-desc"></p>
@@ -83,9 +82,9 @@
                 </div>
             </section>
 
-            <section id="home-dir-cards">
+            <div id="home-dir-cards">
 
-            </section>
+            </div>
         </div>
     </main>
     <footer>
