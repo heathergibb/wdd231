@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Magrath | Chamber of Commerce | Directory</title>
+    <title>Magrath | Chamber of Commerce | Home</title>
     <meta name="author" content="Heather Gibb">
-    <!-- <meta name="description" content="Resource hub for businesses in Magrath. Provides information on events, networking, directories, and shopping."> -->
-    <meta name="description" content="Discover and connect with local businesses in Magrath. Explore our Chamber of Commerce directory to find trusted members, services, and community resources.">
-    <meta property="og:title" content="Magrath | Chamber of Commerce | Directory">
-    <meta property="og:description" content="Discover and connect with local businesses in Magrath. Explore our Chamber of Commerce directory to find trusted members, services, and community resources.">
+    <meta name="description" content="Resource hub for businesses in Magrath. Provides information on events, networking, directories, and shopping.">
+    <meta property="og:title" content="Magrath | Chamber of Commerce | Home">
+    <meta property="og:description" content="Resource hub for businesses in Magrath. Provides information on events, networking, directories, and shopping.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://heathergibb.github.io/wdd231/chamber/images/magrath-sign.jpg">
     <meta property="og:url" content="https://heathergibb.github.io/wdd231/chamber/directory.html">
@@ -20,7 +19,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <script src="scripts/header-footer.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/home.js" type="module"></script>
+    <script src="scripts/members.js" type="module"></script>
+    
 </head>
 <body>
     <header>
@@ -40,24 +41,52 @@
         <div id="menu"></div>
     </header>
     <main>
-        <div class="hero">
-            <picture>
-                <source media="(min-width: 1000px)" srcset="">
-                <source media="(min-width: 700px)" srcset="">
-                <img src="" alt="hero image" width="500" height="">
-            </picture>
-            <button>Keynote Tickets</button>
+        
+            <section class="hero">
+                <picture>
+                    <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
+                    <source media="(min-width: 700px)" srcset="images/hero-med.webp">
+                    <img src="images/grain.webp" alt="hero image" width="700" height="280">
+                </picture>
+                <button>Become a Chamber Member Today!</button>
+            </section>
+        <div id="home-container">
+            <h1 class="main-heading">Home</h1>
+            
+            <section id="home-cards">
+                <div id="events" class="home-card">
+                    <h2>Events</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div id="current-weather" class="home-card">
+                    <h2>Current Weather</h2>
+                    <div id="current-weather-container">
+                        <img id="weather-icon" width="70" height="70">
+                        <div id="current-weather-details">
+                            <p id="temp" class="temps"></p>
+                            <p id="temp-desc"></p>
+                            <p class="card-label">High:<span id="high"></span></p>
+                            <p class="card-label">Low:<span id="low"></span></p>
+                            <p class="card-label">Humidity:<span id="humidity"></span></p>
+                            <!-- <p class="card-label">Sunrise:<span id="sunrise"></span></p>
+                            <p class="card-label">Sunset:<span id="sunset"></span></p> -->
+                        </div>
+                    </div>
+                </div>
+                <div id="weather-forecast" class="home-card">
+                    <h2>Weather Forecast</h2>
+                    <div id="forecast-details">
+                        <span id="today"></span>
+                        <span id="tomorrow"></span>
+                        <span id="next-day"></span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="home-dir-cards">
+
+            </section>
         </div>
-        <h1 class="main-heading">Home</h1>
-
-        <div class="home-cards">
-
-        </div>
-
-        <div class="dir-cards">
-
-        </div>
-
     </main>
     <footer>
         <div id="contact-info">

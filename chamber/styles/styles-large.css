@@ -30,14 +30,28 @@
     
     /* MAIN SECTION */
 
-    main {
+    .hero button {
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+    }
+    #directory-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
+    #home-cards {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    #home-dir-cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
     .main-heading {
         grid-column: 1/2;
-        align-self: center;
     }
 
     .dir-layout {
@@ -45,6 +59,7 @@
         justify-content: right;
         grid-column: 2/3;
         align-self: center;
+        margin-right: 0;
     }
 
     .dir-layout label {
@@ -64,7 +79,6 @@
     }
 
     #directory-cards {
-        display: grid;
         grid-column: 1/3;
         margin: 0;
     }
@@ -76,7 +90,7 @@
         padding: 0.25rem;
     }
 
-     #directory-cards.dir-list .member-card img {
+    #directory-cards.dir-list .member-card img {
         display: none;
     }
 
@@ -113,7 +127,7 @@
 
 @media screen and (min-width: 1200px) {
 
-    main {
+    #home-container, #directory-container {
         margin: 0px 0px 20px 0px;
     }
 }
