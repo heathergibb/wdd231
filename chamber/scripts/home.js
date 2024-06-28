@@ -47,63 +47,65 @@ async function displayCurrentWeather() {
 }
 
 async function displayForecast() {
-    const today = document.querySelector("#today");
-    const tomorrow = document.querySelector("#tomorrow");
-    const nextDay = document.querySelector("#next-day");
+    const first = document.querySelector("#first");
+    const second = document.querySelector("#second");
+    const third = document.querySelector("#third");
 
     const forecast = await getForecastData();
 
-    today.innerHTML = `${forecast[0].date}: <span class="temps">${forecast[0].high}&deg;C</span>`;
-    tomorrow.innerHTML = `${forecast[1].date}: <span class="temps">${forecast[1].high}&deg;C</span>`;
-    nextDay.innerHTML = `${forecast[2].date}: <span class="temps">${forecast[2].high}&deg;C</span>`;
+    first.innerHTML = `${forecast[0].date}: <span class="temps">${forecast[0].high}&deg;C</span>`;
+    second.innerHTML = `${forecast[1].date}: <span class="temps">${forecast[1].high}&deg;C</span>`;
+    third.innerHTML = `${forecast[2].date}: <span class="temps">${forecast[2].high}&deg;C</span>`;
 }
 
 async function getForecastData() {
     const forecastData = await apiFetch(urlForecast);
-
-    let today = new Date();
-    today = today.toLocaleDateString('en-US', {weekday: "long", month: "numeric", day: "numeric"});
     
-    let tomorrow = new Date();
-    tomorrow.setDate(tomorrow.getDate() + 1);
-    tomorrow = tomorrow.toLocaleDateString('en-US', {weekday: "long", month: "numeric", day: "numeric"});
+    const firstDate = forecastData.list[0].dt_txt; // use the first forecast item as the first date to forecast 
+    
+    let first = new Date(firstDate);
+    first = first.toLocaleDateString('en-US', {weekday: "long", month: "numeric", day: "numeric"});
 
-    let nextDay = new Date();
-    nextDay.setDate(nextDay.getDate() + 2);
-    nextDay = nextDay.toLocaleDateString('en-US', {weekday: "long", month: "numeric", day: "numeric"});
+    let second = new Date(firstDate);
+    second.setDate(second.getDate() + 1);
+    second = second.toLocaleDateString('en-US', {weekday: "long", month: "numeric", day: "numeric"});
 
-    let todayData = [];
-    let tomorrowData = [];
+    let third = new Date(firstDate);
+    third.setDate(third.getDate() + 2);
+    third = third.toLocaleDateString('en-US', {weekday: "long", month: "numeric", day: "numeric"});
+
+    let firstData = [];
+    let secondData = [];
     let nextData = [];
 
     forecastData.list.forEach(entry => {
         let date = new Date(entry.dt_txt);
         date = date.toLocaleDateString('en-US', {weekday: "long", month: "numeric", day: "numeric"});
         
-        if (date === today) {
-            todayData.push(entry.main.temp);
-        } else if (date === tomorrow) {
-            tomorrowData.push(entry.main.temp);
-        } else if (date === nextDay) {
+        if (date === first) {
+            firstData.push(entry.main.temp);
+        } else if (date === second) {
+            secondData.push(entry.main.temp);
+        } else if (date === third) {
             nextData.push(entry.main.temp);
         }
     })
 
-    let todayHigh = Math.max(...todayData).toFixed(0);
-    let tomorrowHigh = Math.max(...tomorrowData).toFixed(0);
-    let nextDayHigh = Math.max(...nextData).toFixed(0);
+    let firstHigh = Math.max(...firstData).toFixed(0);
+    let secondHigh = Math.max(...secondData).toFixed(0);
+    let thirdHigh = Math.max(...nextData).toFixed(0);
 
     const returnData = [{
-        "date": "Today",
-        "high": todayHigh
+        "date": first.split(",")[0],
+        "high": firstHigh
     }, 
     {
-        "date": tomorrow.split(",")[0],
-        "high": tomorrowHigh
+        "date": second.split(",")[0],
+        "high": secondHigh
     },
     {
-        "date": nextDay.split(",")[0],
-        "high": nextDayHigh  
+        "date": third.split(",")[0],
+        "high": thirdHigh  
     }]
 
     return returnData;
