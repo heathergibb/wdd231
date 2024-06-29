@@ -31,8 +31,6 @@ async function displayCurrentWeather() {
     const high = document.querySelector("#high");
     const low = document.querySelector("#low");
     const humidity = document.querySelector("#humidity");
-    // const sunrise = document.querySelector("#sunrise");
-    // const sunset = document.querySelector("#sunset");
     
     const weatherIcon = `https://openweathermap.org/img/w/${currentData.weather[0].icon}.png`;
 
@@ -46,8 +44,6 @@ async function displayCurrentWeather() {
     high.innerHTML = `${currentData.main.temp_max.toFixed(0)}&deg;C`;
     low.innerHTML = `${currentData.main.temp_min.toFixed(0)}&deg;C`;
     humidity.innerHTML = `${currentData.main.humidity}%`;
-    // sunrise.innerHTML = currentData.sys.sunrise;
-    // sunset.innerHTML = currentData.sys.sunset;
 }
 
 async function displayForecast() {
@@ -67,6 +63,7 @@ async function getForecastData() {
     
     const firstDate = forecastData.list[0].dt_txt; // use the first forecast item as the first date to forecast 
     
+    // create a string with the weekday, day, and month for the next 3 days
     let first = new Date(firstDate);
     first = first.toLocaleDateString('en-US', {weekday: "long", month: "numeric", day: "numeric"});
 
@@ -86,6 +83,7 @@ async function getForecastData() {
         let date = new Date(entry.dt_txt);
         date = date.toLocaleDateString('en-US', {weekday: "long", month: "numeric", day: "numeric"});
         
+        // sort the forecasted temps by day and save to the array
         if (date === first) {
             firstData.push(entry.main.temp);
         } else if (date === second) {
@@ -95,13 +93,16 @@ async function getForecastData() {
         }
     })
 
+    // Find the highest forecasted temperature for each day
     let firstHigh = Math.max(...firstData).toFixed(0);
     let secondHigh = Math.max(...secondData).toFixed(0);
     let thirdHigh = Math.max(...nextData).toFixed(0);
 
+    // create an array containing the day of the week
+    // and its forecasted high (for the next 3 days)
     const returnData = [{
-        "date": first.split(",")[0],
-        "high": firstHigh
+        "date": first.split(",")[0], // parse out the day of the week (ie: Tuesday)
+        "high": firstHigh // high for the day
     }, 
     {
         "date": second.split(",")[0],

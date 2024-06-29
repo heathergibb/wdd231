@@ -294,6 +294,9 @@ footer p {
     padding: 5px 15px;
     max-width: 48px;
 }
+#social a {
+    text-decoration: none;
+}
 
 #contact-info, #social, #copyright-info {
     padding: 20px;

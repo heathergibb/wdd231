@@ -13,6 +13,8 @@ async function getMemberData() {
 
 export async function displayMembers(cards, filtered = false) {
     let memberList = [];
+    
+    // if the data is meant to be filtered
     if (filtered) {
         memberList = await filterMembers();
     } else {
