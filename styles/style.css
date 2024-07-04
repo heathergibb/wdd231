@@ -147,6 +147,16 @@ button:active {
     display: block;
 }
 
+#course-cards p:hover {
+    animation: pop 1s 1;
+}
+
+@keyframes pop {
+    from {
+        transform: scale(1.1);
+    }  
+}
+
 #course-cards p {
     padding: 20px;
     border-radius: 20px;

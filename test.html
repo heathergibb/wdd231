@@ -7,6 +7,54 @@
     <script src="scripts/index.js" type="module"></script>
 </head>
 <body>
-    
+    <h1 class="control">Header</h1>
+    <h1 class="test">Test</h1>
+    <nav>
+        <a href="#">Menu 1</a>
+        <a href="#">Menu 2</a>
+        <a href="#">Menu 3</a>
+        <a href="#">Menu 4</a>
+    </nav>
 </body>
 </html>
+
+<style>
+    .control {
+        animation: 2s linear 1s infinite running slidein;
+    }
+    .test {
+        animation: 1s linear 1s infinite alternate slidein;
+    }
+
+    @keyframes slidein {
+  from {
+    translate: 150vw 0;
+    scale: 200% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}
+    nav a {
+    flex: 1 1 100%;
+    display: block;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,.1);
+    text-align: center;
+    text-decoration: none;
+    
+    transition: all 0.5s ease-out;
+    /* transition: complete 0.5s ease-out; */
+    /* transition: * 0.5s ease-out; */
+    /* transition: duration .05s, property ease-out;  */
+}
+
+a:hover, a:focus {
+  background-color: #fff;
+  color: #000;
+}
+
+</style>
