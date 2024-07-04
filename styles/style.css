@@ -78,7 +78,7 @@ header img {
     padding: 2rem;
 }
 
-nav a:hover {
+nav li:hover {
     border: 1px solid white;
     background-color: var(--primary-color);  
 }
