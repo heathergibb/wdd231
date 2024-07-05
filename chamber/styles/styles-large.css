@@ -115,6 +115,15 @@
         gap: 20px;
     }
 
+    #form-container {
+        width: 600px;
+    }
+
+    .radio-button:hover {
+        background-color: var(--secondary-color);  
+        color: var(--text-color);
+    }
+
     footer {
         display: flex;
         flex-direction: row;
@@ -127,7 +136,7 @@
 
 @media screen and (min-width: 1200px) {
 
-    #home-container, #directory-container {
+    #home-container, #directory-container, #thanks-container {
         margin: 0px 0px 20px 0px;
     }
 }

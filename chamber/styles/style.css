@@ -112,30 +112,56 @@ header {
     position: absolute;
     bottom: 25px;
     right: 25px;
+    width: 200px;
+    font-size: 1rem;
+}
+
+.hero button, #submit-button {
     background-color: var(--secondary-color);
     color: var(--text-color);
     font-family: var(--font-family-serif);
     text-wrap: wrap;
-    height: 50px;
-    width: 200px;
+    
+    height: 60px;
     text-align: center;
     cursor: pointer;
     transition: all 0.4s;
 }
 
-.hero button:hover {
+#submit-button {
+    font-size: 1.25rem;
+    padding: 0 100px;
+    width: 100%;
+    margin-top: 10px;
+    border: outset var(--primary-color);
+}
+
+.hero button:hover, #submit-button:hover{
     background-color: var(--primary-color);
 }
 
-.hero button:active {
+.hero button:active, #submit-button:active {
     background-color: var(--card-color);
     color: var(--text-color-dark);
 }
 
-#home-container, #directory-container {
+#home-container, #directory-container, #join-container, #thanks-container {
     margin: 0px 20px 20px 20px;
     display: flex;
     flex-direction: column;
+}
+
+#join-container h1 {
+    text-align: center;
+}
+
+#thanks-container {
+    text-align: center;
+}
+
+#thanks-container #results {
+        background-color: var(--card-color);
+        
 }
 
 .main-heading {
@@ -147,13 +173,13 @@ header {
     flex-direction: column;
 }
 
-.home-card {
+.home-card{
     background-color: var(--card-color);
     margin-bottom: 20px;
     font-size: 0.9rem;
 }
 
-.home-card h2 {
+.home-card h2, #form-container h2 {
     margin: 0;
     font-size: 1rem;
     background-color: var(--secondary-color);
@@ -268,6 +294,198 @@ header {
 
 .member-card a {
     margin: 0;
+}
+
+#form-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--card-color);
+}
+
+#form-container form {
+    padding: 20px;
+}
+
+.join-form .form-label {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color-dark);
+}
+
+.join-form .form-input, .form-textarea {
+    height: 44px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+.join-form .form-textarea {
+    height: 140px;
+    text-wrap: wrap;
+    resize: vertical; 
+}
+
+.join-form input:required, .join-form input:invalid {
+    border-left: 5px solid maroon;
+}
+
+.join-form input:valid, .join-form textarea:valid {
+    border-left: 5px solid green;
+}
+
+.join-form fieldset {
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid var(--primary-color);
+    width: 100%;
+}
+
+.radio-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;  
+    color: var(--text-color-dark);
+    background-color: var(--background-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;  
+    width: 300px;
+    height: 44px;
+    cursor: pointer; 
+}
+
+.radio-button input {
+    /* display: none; */
+
+    margin-right: 10px;
+}
+
+.radio-button.np {
+    animation: pulseNP 2s infinite;
+}
+
+.radio-button.bronze {
+    animation: pulseBronze 2s infinite;
+}
+
+.radio-button.silver {
+    animation: pulseSilver 2s infinite;
+}
+
+.radio-button.gold{
+    animation: pulseGold 2s infinite;
+}
+
+@keyframes pulseNP {
+    0% {
+        box-shadow: 0 0 0 0px black;
+    }
+    100% {
+        box-shadow: 0 0 0 5px rgba(0, 0, 0, 0);
+    }
+}
+
+@keyframes pulseBronze {
+    0% {
+        box-shadow: 0 0 0 0px brown;
+    }
+    100% {
+        box-shadow: 0 0 0 5px rgba(0, 0, 0, 0);
+    }
+}
+
+@keyframes pulseSilver {
+    0% {
+        box-shadow: 0 0 0 0px slategray;
+    }
+    100% {
+        box-shadow: 0 0 0 5px rgba(0, 0, 0, 0);
+    }
+}
+
+@keyframes pulseGold {
+    0% {
+        box-shadow: 0 0 0 0px gold;
+    }
+    100% {
+        box-shadow: 0 0 0 5px rgba(0, 0, 0, 0);
+    }
+}
+
+#membership-level-link {
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#membership-level-link:hover {
+    font-weight: bold;
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#membership-dialog {
+    background-color: var(--background-color);
+    color: var(--text-color-dark);
+    margin: 0 auto;
+    padding: 0; 
+    align-self: center;
+}
+
+#membership-dialog .modal-heading {
+    display: block;
+}
+
+#membership-dialog #table-heading {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.25rem;
+    font-family: var(--font-family-serif);
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 20px;
+    margin: 0 0 20px 0;
+}
+
+#membership-dialog #close-modal {
+    background-color: var(--primary-color);
+    border: none;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--text-color);
+    font-family: var(--font-family-serif);
+    padding: 10px 15px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#membership-dialog th {
+    padding: 0 20px 10px 20px;
+}
+
+#membership-dialog td:nth-child(odd) {
+    text-align: center;
+    padding: 0 20px;
+    
+}
+
+#membership-dialog tr:nth-child(even) {
+    background-color: var(--card-color);
+}
+
+#membership-dialog tr, #membership-dialog td {
+    border: 1px solid var(--primary-color);
 }
 
 footer {
