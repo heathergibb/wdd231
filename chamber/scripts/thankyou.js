@@ -3,7 +3,6 @@ const fullURL = window.location.href;
 const everything = fullURL.split("?");
 
 let formData = everything[1].split("&");
-console.log(formData);
 
 const level = document.querySelector("#level");
 const showInfo = document.querySelector("#results");
