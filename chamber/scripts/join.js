@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const timestamp = document.querySelector("#timestamp");
 
     timestamp.value = Date().toString();
-    console.log(timestamp.value);
 })
 
 
