@@ -135,7 +135,7 @@ header {
     border: outset var(--primary-color);
 }
 
-.hero button:hover, #submit-button:hover{
+.hero button:hover, #submit-button:hover, .bylaws:hover {
     background-color: var(--primary-color);
 }
 
@@ -515,6 +515,20 @@ header {
     max-width: 300px;
     width: 100%;
     height: auto;
+}
+
+.card-content li {
+    margin-bottom: 10px;
+}
+
+.bylaws {
+    display: block;
+    margin-top: 20px;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--text-color)
 }
 
 #img-area {
