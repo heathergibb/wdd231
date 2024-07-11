@@ -124,6 +124,22 @@
         color: var(--text-color);
     }
 
+    #discover-container {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    #discover-container .main-heading {
+        grid-column: 1/3;
+    }
+
+    .sidebar {
+        grid-column: 1/2;
+    }
+
+    .img-area {
+        grid-column: 2/3;
+    }
+
     footer {
         display: flex;
         flex-direction: row;
@@ -136,7 +152,7 @@
 
 @media screen and (min-width: 1200px) {
 
-    #home-container, #directory-container, #thanks-container {
+    #home-container, #directory-container, #thanks-container, #discover-container {
         margin: 0px 0px 20px 0px;
     }
 }

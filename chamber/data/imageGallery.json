@@ -1,0 +1,61 @@
+{
+    "images": 
+    [
+        {
+            "caption": "Beautiful Mountain View",
+            "location": "../chamber/images/mountain-view.webp",
+            "desc": "View of Magrath with Chief Mountain in the background",
+            "width": 800,
+            "height": 600
+        },
+        {
+            "caption": "Basketball, Pickleball, and Tennis Courts",
+            "location": "../chamber/images/courts.webp",
+            "desc": "outdoor basketball court",
+            "width": 800,
+            "height": 600
+        },
+        {
+            "caption": "Enjoy a Game of Disc Golf",
+            "location": "../chamber/images/disc-golf.webp",
+            "desc": "A map of a disc golf course",
+            "width": 800,
+            "height": 600
+        },
+        {
+            "caption": "K-12 School",
+            "location": "../chamber/images/high-school.webp",
+            "desc": "outside of Magrath High School",
+            "width": 800,
+            "height": 600
+        },
+        {
+            "caption": "Diamond Willow Retirement Lodge",
+            "location": "../chamber/images/diamond-willow.webp",
+            "desc": "Diamond Willow Retirement Lodge",
+            "width": 800,
+            "height": 600
+        },
+        {
+            "caption": "Fish Pond",
+            "location": "../chamber/images/fish-pond.webp",
+            "desc": "Horseshoe shaped fish pond",
+            "width": 800,
+            "height": 600
+        },
+        {
+            "caption": "Magrath Museum",
+            "location": "../chamber/images/museum.webp",
+            "desc": "outside of the Magrath museum",
+            "width": 800,
+            "height": 600
+        },
+        {
+            "caption": "Welcome to Magrath - Storm Pond",
+            "location": "../chamber/images/storm-pond.webp",
+            "desc": "Horseshoe shaped fish pond",
+            "width": 800,
+            "height": 600
+        }
+    ]
+}

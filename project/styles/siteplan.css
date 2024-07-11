@@ -1,0 +1,59 @@
+:root {
+    --color-light: rgb(237, 244, 242);
+    --color-menu: rgb(231, 231, 147);
+    --color-main-dark: rgb(49, 71, 58);
+    --color-main-dark-shadow: rgb(49, 71, 58, .25);
+    --card-background: white;  
+
+    --font-heading: Wittgenstein, Verdana, sans-serif;
+    --font-body: Jost, Arial, sans-serif;
+}
+
+body {
+    background-color: var(--color-light);
+    font-family: var(--font-body);
+}
+
+h1 {
+    background-color: var(--color-main-dark);
+    color: var(--color-light);
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    font-family: var(--font-heading);
+}
+
+.menu-links, footer {
+    background-color: var(--color-menu);
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+.menu-links p {
+    padding: 0;
+    margin: 0;
+}
+
+.section {
+    background-color: var(--card-background);
+    margin: 20px;
+    padding: 10px;
+    color: var(--card-main-dark);
+    box-shadow: 1px 1px 1em var(--color-main-dark-shadow);
+}
+
+.label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.img-label {
+    font-weight: bold;
+    text-align: center;
+}
+
+.wireframes {
+    display: block;
+    text-align: center;
+}
