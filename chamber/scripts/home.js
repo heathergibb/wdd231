@@ -1,3 +1,7 @@
+document.getElementById("join-button").addEventListener("click", function() {
+    window.location.href = "join.html";
+})
+
 const lat = 49.417;
 const lon = -112.868;
 const appId = "c7701c5138b8af4e708d6a9a5167b11c";
