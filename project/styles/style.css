@@ -1,0 +1,119 @@
+:root {
+    --color-light: rgb(237, 244, 242);
+    --color-menu: rgb(231, 231, 147);
+    --color-main-dark: rgb(49, 71, 58);
+    --color-main-dark-shadow: rgb(49, 71, 58, .25);
+    --card-background: white;  
+
+    --font-heading: Wittgenstein, Verdana, sans-serif;
+    --font-body: Jost, Arial, sans-serif;
+}
+
+body {
+    background-color: var(--color-light);
+    font-family: var(--font-body);
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-main-dark);
+    color: var(--color-light);
+    text-align: center;
+    margin: 0px;
+    padding: 20px;
+    font-family: var(--font-heading);
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.frame {
+    font-family: var(--font-body);
+    color: var(--color-main-dark);
+    display: block;
+    background-color: var(--color-menu);
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+.frame p {
+    padding: 0;
+    margin: 0;
+}
+
+#menu::before {
+    content: "☰";
+    font-size: 2rem;
+    padding-left: 15px;
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+.menu-links {
+    display: none;  
+    margin: 0;
+    padding: 0;
+}
+
+.menu-links.show {
+    display: flex;
+    font-size: 1.5rem;
+    flex-direction: column;
+    background-color: var(--color-menu);
+}
+
+.menu-links a {
+    text-decoration: none;
+    padding: 20px;
+    color: var(--color-main-dark);
+}
+
+.menu-links a:hover {
+    color: var(--color-light);
+    background-color: var(--color-main-dark);
+}
+
+a.active {
+    background-color: var(--color-menu);
+    /* text-decoration: underline; */
+    filter: brightness(90%);
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.footer-link {
+    display: inline-block;
+    padding: 20px;
+    font-style: italic;
+    /* text-decoration: none; */
+}
+
+.footer-link:visited {
+    color: var(--color-main-dark);
+}
+
+.footer-link:hover {
+    font-weight: bold;
+}
+
+/* .section {
+    background-color: var(--card-background);
+    margin: 20px;
+    padding: 10px;
+    color: var(--card-main-dark);
+    box-shadow: 1px 1px 1em var(--color-main-dark-shadow);
+} */
+
+/* .label {
+    font-weight: bold;
+    margin-right: 5px;
+} */
