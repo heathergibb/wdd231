@@ -17,4 +17,8 @@
         flex: 1 1 auto;
         font-size: 1.25rem;
     }
+
+    #home-content {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
