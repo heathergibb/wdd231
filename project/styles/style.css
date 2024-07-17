@@ -115,6 +115,11 @@ main {
     height: auto;
 }
 
+.home-card .card-img:hover {
+    /* transform: scale(1.1); */
+    box-shadow: 1px 1px 1em var(--color-menu);
+}
+
 .weather-grid {
     display: grid;
     grid-template-columns: 1fr auto auto auto 1fr;

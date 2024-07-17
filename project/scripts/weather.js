@@ -1,5 +1,5 @@
 displayWeather("#banff-weather", 51.1784, -115.5708);
-displayWeather("#jasper-weather", 52.8735, -118.0857);
+displayWeather("#jasper-weather", 52.8737, -118.0814);
 displayWeather("#kananaskis-weather", 50.9179, -115.1463);
 
 async function displayWeather(locationId, lat, lon) {
@@ -28,11 +28,6 @@ async function displayWeather(locationId, lat, lon) {
             </div>
             `;
     }
-    
-    
-
-    // const jasper = document.querySelector("#jasper-weather");
-    // const kananaskis = document.querySelector("#kananaskis-weather");
 }
 async function getWeatherString(lat, lon) {
     try {
