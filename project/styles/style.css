@@ -1,7 +1,7 @@
 :root {
-    --color-light: rgb(237, 244, 242);
-    --color-menu: rgb(231, 231, 147);
-    --color-main-dark: rgb(49, 71, 58);
+    --color-light: #edf4f2;
+    --color-menu: #e7e793;
+    --color-main-dark: #31473a;
     --color-main-dark-shadow: rgb(49, 71, 58, .25);
     --card-background: white;  
 
@@ -10,8 +10,10 @@
 }
 
 body {
+    /* max-width: 1400px; */
     background-color: var(--color-light);
     font-family: var(--font-body);
+    /* margin: 0 auto; */
 }
 
 .top-header {
@@ -81,20 +83,24 @@ h1 {
 
 a.active {
     background-color: var(--color-menu);
-    /* text-decoration: underline; */
     filter: brightness(90%);
 }
 
 main {
     margin: 0 auto;
-    max-width: 1400px;
+    text-align: center;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
 }
 
 .footer-link {
     display: inline-block;
     padding: 20px;
     font-style: italic;
-    /* text-decoration: none; */
+    color: var(--color-main-dark);
 }
 
 .footer-link:visited {
