@@ -25,6 +25,8 @@ async function displayWeather(locationId, lat, lon) {
         
         weatherIcon.setAttribute("src", iconsrc);
         weatherIcon.setAttribute("alt", data.weather[0].description);
+        weatherIcon.setAttribute("width", 40);
+        weatherIcon.setAttribute("height", 40);
 
         location.innerHTML = `
             <div class="weather-grid">
