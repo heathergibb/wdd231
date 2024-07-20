@@ -3,8 +3,11 @@ const everything = fullURL.split("?");
 let formData = everything[1].split("&");
 
 const subscriberName = document.querySelector("#new-subscriber");
+const subscriberEmail = document.querySelector("#email");
 
 subscriberName.innerHTML = `${show("first")} ${show("last")}`;
+subscriberEmail.innerHTML = `${show("email")} successfully added.`;
+
 
 function show(data) {
     let result = "";

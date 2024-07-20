@@ -95,7 +95,7 @@ main {
     margin: 10px;
 }
 
-#hero img {
+#resources-hero {
     width: 100%;
     height: auto;
 }
@@ -313,15 +313,16 @@ main {
     display: block;
 }
 
-#thanks {
-    font-family: var(--font-heading);
-    font-style: italic;
-    font-size: 1.25rem;
+#welcome-message {
     position: absolute;
-    top: 20%;
+    top: 100px;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family: var(--font-heading);
+    font-style: italic;
+    /* font-size: 1.15rem; */
 }
+
 
 .footer-link {
     display: inline-block;
