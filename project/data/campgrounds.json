@@ -1,0 +1,413 @@
+{
+    "campgrounds":
+    [
+        {
+            "name": "Johnston Canyon",
+            "park": "banff",
+            "image": "../project/images/johnston-canyon.webp",
+            "description": "Only 25 km from the town of Banff, this campground is a good option for a more rustic camping experience. Sites are available for tents and small RVs up to 8.2 metres (27 feet). Its central location, along the Bow Valley Parkway/Hwy 1A, provides access to the popular Johnston Canyon Trail. Public transit is available to the town of Banff during summer.",
+            "sites": 132,
+            "services": [
+                "Drinking Water",
+                "Flush Toilet",
+                "Showers",
+                "Cooking shelter",
+                "Picnic shelter",
+                "Firepits",
+                "Dumping station: sewage disposal",
+                "Accessible facilities",
+                "Food storage locker"
+            ],
+            "fees": [
+                {
+                "type": "Unserviced with washroom building having toilets and showers",
+                "fee": "$30.50"
+                }
+            ]
+        },
+        {
+            "name": "Two Jack Main",
+            "park": "banff",
+            "image": "../project/images/two-jack-main.webp",
+            "description": "This campground offers a more secluded camping experience. Located just minutes from Lake Minnewanka and nearby attractions, and 10 km from the town of Banff, this rustic, no-service campground has scenic sites available for tents or RVs up to 7.3 metres (24 feet), as well as equipped campsites.",
+            "sites": 380,
+            "services": [
+                "Drinking Water",
+                "Flush Toilet",
+                "Cooking shelter",
+                "Picnic shelter",
+                "Firepits",
+                "Dumping station: sewage disposal",
+                "Food storage locker"
+            ],
+            "fees": [
+                {
+                    "type": "Equipped Campsites",
+                    "fee": "$78.00"
+                },
+                {
+                    "type": "Unserviced with washroom building having toilets only",
+                    "fee": "24.00"
+                }
+            ]
+        },
+        {
+            "name": "Two Jack Lakeside",
+            "park": "banff",
+            "image": "../project/images/two-jack-lakeside.webp",
+            "description": "This is one of Banff's most popular campgrounds. Located 10 km from the town of Banff and close to Lake Minnewanka, this no-service campground is beautifully situated on the shores of Two Jack Lake. It is perfect for tents or small RVs up to 8.2 metres (27 feet). It offers some lakefront sites, 10 oTENTik sites, mountain views and access to the lake for non-motorized recreation.",
+            "sites": 74,
+            "services": [
+                "Drinking Water",
+                "Flush Toilet",
+                "Showers",
+                "Cooking shelter",
+                "Picnic shelter",
+                "Firepits",
+                "Dumping station: sewage disposal",
+                "Food storage locker"
+            ],
+            "fees": [
+                {
+                    "type": "Unserviced with washroom building having toilets and showers",
+                    "fee": "$30.50"
+                }
+            ]
+        },
+        {
+            "name": "Castle Mountain",
+            "park": "banff",
+            "image": "../project/images/castle-mountain.webp",
+            "description": "This campground is small and intimate. It offers rustic, no-service camping in a beautiful wooded area along the Bow Valley Parkway (Hwy 1A). Just 32 km from the town of Banff, the campground is suitable for tents or small RVs up to 7.3 metres (24 feet). It is close to nearby attractions, such as Silverton Falls and Johnston Canyon. Sites are available on a firstcome, first-served basis only. Self-register as you enter Castle Mountain Campground. Pay by leaving your credit card information or bring exact cash.",
+            "sites": 74,
+            "services": [
+                "Drinking Water",
+                "Flush Toilet",
+                "Showers",
+                "Cooking shelter",
+                "Picnic shelter",
+                "Firepits",
+                "Dumping station: sewage disposal",
+                "Food storage locker"
+            ],
+            "fees": [
+                {
+                    "type": "Unserviced with washroom building having toilets only",
+                    "fee": "$24.00"
+                }
+            ]
+        },
+        {
+            "name": "Tunnel Mountain Village",
+            "park": "banff",
+            "image": "../project/images/tunnel-mountain-village.webp",
+            "description": "Located 4.5 km from the town of Banff, this campground offers a more traditional camping experience with mountain views, firepits for cooking, and access to hiking and biking trails. This campground has options to suit many camping preferences and has a limited number of large campsites.",
+            "sites": 618,
+            "services": [
+                "Drinking Water",
+                "Flush Toilet",
+                "Showers",
+                "Firepits",
+                "Dumping station: sewage disposal",
+                "Accessible facilities",
+                "Food storage locker"
+            ],
+            "fees": [
+                {
+                    "type": "Water, sewer, and electrical",
+                    "fee": "$42.50"
+                },
+                {
+                    "type": "Electrical",
+                    "fee": "$36.00"
+                },
+                {
+                    "type": "Unserviced with washroom building having toilets and showers",
+                    "fee": "$30.50"
+                }
+            ]
+        },
+        {
+            "name": "Lake Louise",
+            "park": "banff",
+            "image": "../project/images/lake-louise.webp",
+            "description": "The Lake Louise Campground lies in the heart of Banff National Park, offering access to a multitude of trails and attractions, including world-famous Lake Louise and Moraine Lake. It is a short drive to access the Icefields Parkway – one of the most scenic drives in the world! The 230 kilometers Icefields Parkway features spectacular mountains, lakes, rivers, canyons, and of course, glaciers!",
+            "sites": 206,
+            "services": [
+                "Drinking Water",
+                "Flush Toilet",
+                "Showers",
+                "Cooking shelter",
+                "Picnic shelter",
+                "Firepits",
+                "Dumping station: sewage disposal",
+                "Accessible facilities",
+                "Interpretive programs",
+                "Food storage locker"
+            ],
+            "fees": [
+                {
+                    "type": "Electrical",
+                    "fee": "$36.00"
+                },
+                {
+                    "type": "Unserviced with washroom building having toilets and showers",
+                    "fee": "$30.50"
+                }
+            ]
+        },
+        {
+            "name": "Whistlers",
+            "park": "jasper",
+            "image": "../project/images/whistlers.webp",
+            "description": "In a busy and stressful world, it’s more important than ever for people to connect with nature and rediscover the outdoors. Although we are still applying the finishing touches, we are happy to welcome you to the newly modernized Whistlers Campground. Your patience and understanding were appreciated during the construction phase and we hope you will enjoy the improvements.",
+            "sites": 781,
+            "services": [
+                "Drinking Water",
+                "Flush Toilet",
+                "Showers",
+                "Cooking shelter",
+                "Picnic shelter",
+                "Firepits",
+                "Accessible facilities"
+            ],
+            "fees": [
+                {
+                    "type": "Unserviced, with fire pit",
+                    "fee": "$30.50"
+                },
+                {
+                    "type": "Full Service",
+                    "fee": "$53.50"
+                }
+            ]
+        },
+        {
+            "name": "Wapiti",
+            "park": "jasper",
+            "image": "../project/images/wapiti.webp",
+            "description": "On the shore of the Athabasca River, Wapiti Campground has sites for tenting and electrical hook-up spots for RVs. Offering 363 sites with amenities like hot showers, electricity and fire pits.",
+            "sites": 206,
+            "services": [
+                "Drinking Water",
+                "Flush Toilet",
+                "Showers",
+                "Cooking shelter",
+                "Picnic shelter",
+                "Firepits",
+                "Food storage locker"
+            ],
+            "fees": [
+                {
+                    "type": "Unserviced, with fire pit",
+                    "fee": "$30.50"
+                },
+                {
+                    "type": "Electrical, with fire pit",
+                    "fee": "$47.00"
+                }
+            ]
+        },
+        {
+            "name": "Wabasso",
+            "park": "jasper",
+            "image": "../project/images/wabasso.webp",
+            "description": "With pristine views, rushing river water and electrical sites for small RVs, Wabasso lets you get away from it all, without getting rid of it all (no showers).",
+            "sites": 231,
+            "services": [
+                "Drinking Water",
+                "Flush Toilet",
+                "Cooking shelter",
+                "Picnic shelter",
+                "Firepits",
+                "Play area",
+                "Food storage locker"
+            ],
+            "fees": [
+                {
+                    "type": "Unserviced, with fire pit",
+                    "fee": "$30.50"
+                },
+                {
+                    "type": "Electrical, with fire pit",
+                    "fee": "$47.00"
+                }
+            ]
+        },
+        {
+            "name": "Miette",
+            "park": "jasper",
+            "image": "../project/images/miette.webp",
+            "description": "Miette Campground is a secluded gem, nestled just inside the east boundary of the park on the Miette Road. This campground offers basic services, including running water, fire rings and flush toilets (no showers).",
+            "sites": 140,
+            "services": [
+                "Drinking Water",
+                "Flush Toilet",
+                "Firepits",
+                "Accessible facilities",
+                "Food storage locker"
+            ],
+            "fees": [
+                {
+                    "type": "Unserviced, with fire pit",
+                    "fee": "$30.50"
+                }
+            ]
+        },
+        {
+            "name": "Snaring",
+            "park": "jasper",
+            "image": "../project/images/snaring.webp",
+            "description": "Snaring has a nice mix of campsites, ranging from private and well-treed to wide open and sunny. There are even a few spots along the river with dramatic views of jagged peaks.",
+            "sites": 62,
+            "services": [
+                "Drinking Water",
+                "Kitchen shelter",
+                "Firepits",
+                "Accessible facilities",
+                "Food storage locker"
+            ],
+            "fees": [
+                {
+                    "type": "Unserviced, with fire pit",
+                    "fee": "$30.50"
+                }
+            ]
+        },
+        {
+            "name": "Wilcox",
+            "park": "jasper",
+            "image": "../project/images/wilcox.webp",
+            "description": "Sitting at the base of one of Jasper's premiere day hikes, with which it shares its name, Wilcox Campground is also down the road from the Columbia Icefield, offering access to a variety of family friendly amenities and day trips.",
+            "sites": 46,
+            "services": [
+                "Drinking Water",
+                "Flush Toilet",
+                "Kitchen shelter",
+                "Firepits",
+                "Sani-dump",
+                "Accessible facilities",
+                "Food storage locker"
+            ],
+            "fees": [
+                {
+                    "type": "Unserviced, with fire pit",
+                    "fee": "$30.50"
+                }
+            ]
+        },
+        {
+            "name": "Honeymoon Lake",
+            "park": "jasper",
+            "image": "../project/images/honeymoon-lake.webp",
+            "description": "Being able to replace ringing phones, noisy traffic and city smog with quiet lakeside strolls and the smell of breakfast cooking over a campfire gives you a sense of how Honeymoon Lake Campground got its name.",
+            "sites": 34,
+            "services": [
+                "Drinking Water",
+                "Flush Toilet",
+                "Kitchen shelter",
+                "Picnic shelter",
+                "Firepits",
+                "Food storage locker"
+            ],
+            "fees": [
+                {
+                    "type": "Unserviced, with fire pit",
+                    "fee": "$30.50"
+                }
+            ]
+        },
+        {
+            "name": "Three Sisters",
+            "park": "kananaskis",
+            "image": "../project/images/three-sisters.webp",
+            "description": "Three Sisters Campground is found in Bow Valley Provincial Park, 12 km east of Canmore on Hwy. 1. There are 36 well-treed sites suited to both RVs and tents. The campground is beside the Bow River and has a hand launch for small non-motorized boats. There are many activities available in the surrounding area, including hiking and biking trails, fishing and paddling. ",
+            "sites": 36,
+            "services": [
+                "Firepits",
+                "Firewood Sold",
+                "Hand Launch",
+                "Shelter - Picnic",
+                "Pit/Vault Toilets",
+                "Water - Pump"
+            ],
+            "fees": [
+                {
+                    "type": "Unserviced, with fire pit",
+                    "fee": "$31.00"
+                }
+            ]
+        },
+        {
+            "name": "Canoe Meadows",
+            "park": "kananaskis",
+            "image": "../project/images/canoe-meadows.webp",
+            "description": "A small campground located near world-class rafting and river surfing on the Kananaskis River, just inside the entrance to Kananaskis Country. Ten walk-in tenting sites give tenters a convenient staging area for their river adventures.",
+            "sites": 10,
+            "services": [
+                "Firepits",
+                "Firewood Sold",
+                "Pit/Vault Toilets"
+            ],
+            "fees": [
+                {
+                    "type": "Unserviced, with fire pit",
+                    "fee": "$29.00"
+                }
+            ]
+        },
+        {
+            "name": "Ghost Reservoir",
+            "park": "kananaskis",
+            "image": "../project/images/ghost-reservoir.webp",
+            "description": "This campground is found in Ghost Reservoir Provincial Recreation Area, 18 km west of Cochrane on Hwy. 1A. There is excellent access here to boating and wind surfing opportunities on the Ghost Reservoir.",
+            "sites": 80,
+            "services": [
+                "Boat Launch",
+                "Firepits",
+                "Firewood Sold",
+                "Pit/Vault Toilets",
+                "Water - Pump"
+            ],
+            "fees": [
+                {
+                    "type": "Unserviced, with fire pit",
+                    "fee": "$31.00"
+                }
+            ]
+        },
+        {
+            "name": "Mount Kidd RV Park",
+            "park": "kananaskis",
+            "image": "../project/images/mount-kidd.webp",
+            "description": "Mount Kidd RV Park and Campground cater to all types of units for your Kananaskis camping vacation. Motor homes, trailers, truck campers, tent trailers, and tents can all be used at their location. They feature fully serviced (water, sewer, and electrical hook-ups), semi-serviced, and no hookup campsites.",
+            "sites": 80,
+            "services": [
+                "Firepits",
+                "Firewood Sold",
+                "Showers",
+                "Flush Toilet",
+                "Sani-Dump",
+                "Play area"
+            ],
+            "fees": [
+                {
+                    "type": "Full Service",
+                    "fee": "$56.57"
+                },
+                {
+                    "type": "Power and Water",
+                    "fee": "$50.78"
+                },
+                {
+                    "type": "Power Only",
+                    "fee": "$48.38"
+                },
+                {
+                    "type": "Unserviced",
+                    "fee": "$38.35"
+                }
+            ]
+        }  
+    ]
+}

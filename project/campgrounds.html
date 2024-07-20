@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/style-large.css">
     <script src="scripts/header-footer.js" defer></script>
+    <script src="scripts/campgrounds.js" type="module"></script>
+    <script src="scripts/display-campgrounds.js" type="module"></script>
 </head>
 <body>
     <header>
@@ -35,7 +37,21 @@
         </nav>
     </header>
     <main>
+        <div id="campground-container">
+            <div id="sidebar">
+                <fieldset id="filter-parks">
+                    <legend>Park</legend>
+                    <label for="search-all"><input checked type="radio" name="search-parks" value="all" id="search-all">All</label>
+                    <label for="search-banff"><input type="radio" name="search-parks" value="banff" id="search-banff">Banff</label>
+                    <label for="search-jasper"><input type="radio" name="search-parks" value="jasper" id="search-jasper">Jasper</label>
+                    <label for="search-kananaskis"><input type="radio" name="search-parks" value="kananaskis" id="search-kananaskis">Kananaskis</label>
+                </fieldset>
+            </div>
+            <div id="content">
 
+            </div>
+        </div>
+        <dialog id="info"></dialog>
     </main>
     <footer>
         <div class="frame">
