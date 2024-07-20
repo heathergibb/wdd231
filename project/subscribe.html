@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/style-large.css">
     <script src="scripts/header-footer.js" defer></script>
+    <script src="scripts/subscribe.js" defer></script>
 </head>
 <body>
     <header>
@@ -35,7 +36,15 @@
         </nav>
     </header>
     <main>
-
+        <div class="card">
+            <h2>Subscribe to Our Newletter</h2>
+            <form method="get" action="welcome.html" class="join-form">
+                <label class="form-label">First Name:<input type="text" class="form-input" name="first" required autocomplete="given-name" title="Your First Name"></label>
+                <label class="form-label">Last Name:<input type="text" class="form-input" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+                <label class="form-label">Email:<input type="email" class="form-input" required name="email" title="Email address" autocomplete="email" placeholder="johndoe@gmail.com"></label>
+                <input type="submit" id="submit-button" value="Sign Up">
+            </form>
+        </div>
     </main>
     <footer>
         <div class="frame">

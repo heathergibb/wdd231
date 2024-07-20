@@ -91,6 +91,10 @@ main {
     text-align: center;
 }
 
+#intro {
+    margin: 10px;
+}
+
 #hero img {
     width: 100%;
     height: auto;
@@ -101,11 +105,11 @@ main {
     grid-template-columns: 1fr;
 }
 
-.home-card, .campground-card, .resources-card {
+.home-card, .campground-card, .card {
     padding: 20px;
     background-color: var(--card-background);
     margin: 20px;
-    padding: 10px;
+    padding: 20px;
     color: var(--card-main-dark);
     box-shadow: 1px 1px 1em var(--color-main-dark-shadow);
 }
@@ -245,11 +249,40 @@ main {
     text-align: left;
 }
 
-.resources a {
+.join-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    
+}
+
+.form-label {
+    font-size: 1.1rem;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.join-form .form-input {
+    display: block;
+    height: 44px;
+    box-sizing: border-box;
+    margin: 5px 0 10px 0;
+    width: 100%;
+}
+
+.join-form .form-input:required {
+    border-left: 5px solid maroon;
+}
+
+.join-form .form-input:valid {
+    border-left: 5px solid green;
+}
+
+#resources a, #submit-button {
     display: block;
     background-color: var(--color-main-dark);
     padding: 20px;
-    margin: 10px auto;
+    margin: 20px auto;
     border-radius: 10px;
     text-decoration: none;
     color: var(--color-light);
@@ -261,9 +294,33 @@ main {
     transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-.resources a:hover {
+#resources a:hover, #submit-button:hover {
     filter:contrast(1.15);
     box-shadow: 5px 5px 5px var(--color-main-dark-shadow);
+}
+
+#welcome-container {
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+#thanks-img {
+    height: auto;
+    width: 100%;
+    display: block;
+}
+
+#thanks {
+    font-family: var(--font-heading);
+    font-style: italic;
+    font-size: 1.25rem;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .footer-link {

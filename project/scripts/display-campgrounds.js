@@ -31,6 +31,7 @@ function displayCampgrounds(campgrounds) {
         let img = document.createElement("img");
         img.setAttribute("src", campground.image);
         img.setAttribute("alt",`${campground.name} campground`);
+        
         //Make the first 2 images eager and have the rest be lazy
         if (imgCount <= 2) {
             img.setAttribute("loading", "eager");
